@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <title> Bootstrap Example </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="passgen.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+  <div id="logo"> 
+    <img src="cyph.png"> 
+  </div> 
+  <div class='container'>
+    <header>
+      <nav>
+        <ul>
+      
+           <li><a href="homepage.php">Home</a></li>
+           <li><a href="passwordman.php">Password Manager</a></li>
+           <li><a href="passgen.html">Generate Password</a></li>
+           <li><a href="login.php">Login</a></li>
+           
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div class="passgentable">
+   
+    <form class="passtable">
+        <label> 
+            <h3>Generate Password</h3>
+
+            <div class="passhead">
+                <input id="passhead" type="text" placeholder="">
+                <button class="copy" id="copy"> Copy </button> 
+              </div>
+
+            <div class="form-group">
+                <label for="passlengthid">Password length</label>
+                <input id="passlengthid" type="number" min="5" max="20">
+              </div>
+            
+        <div class="form-group">
+          <label for="lowercaseid">Include lowercase letters</label>
+          <input id="lowercaseid" type="checkbox" placeholder="Include uppercase letters">
+        </div>
+   
+        <div class="form-group">
+            <label for="uppercase">Include uppercase letters</label>
+            
+            <input id="uppercaseid"  checked type="checkbox" placeholder="">
+
+           
+          </div>
+      
+          <div class="form-group">
+            <label for="numbersid">Include numbers</label>
+            <input id="numbersid" type="checkbox" placeholder="">
+           
+          </div>
+
+          <div class="form-group">
+            <label for="symbolsid">Include symbols</label>
+            <input id="symbolsid" type="checkbox" placeholder="">  
+           
+          </div>
+
+          <input type="button"  class="btn-primary" id="Genbutton" value="Generate" />
+          
+          <a href="Passwordcheck.php">
+
+<input type="button"  class="btn-primary" id="passcheck" value="Create Password" />
+</a>
+
+      </form>
+      </div>
+
+  </div>
+   <script src="passgen2.js"></script>
+
+</body>
+</html>
